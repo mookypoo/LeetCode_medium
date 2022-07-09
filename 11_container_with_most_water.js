@@ -2,9 +2,9 @@
 
 const maxArea = function(height){
     var list = [];
-    for (var a of height){
+    for (var a in height){
         var b = a + 1;
-        for (var b of height) {
+        for (var b in height) {
             var area = (b - a) * (height[b] > height[a] ? height[a] : height[b]);
             list.push(area);
         }
