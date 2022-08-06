@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
-// using Set object 
+// using Set object 68ms
 const lengthOfLongestSubstring = function(s) {
     var list = [];
     for (var i = 0; i < s.length; i++){
@@ -12,7 +12,7 @@ const lengthOfLongestSubstring = function(s) {
     }
     return list.sort((a, b) => b-a)[0];
 };
-// 68 seconds 
+
 
 lengthOfLongestSubstring("pwwkew"); // 3
 lengthOfLongestSubstring("bbb"); // 1
