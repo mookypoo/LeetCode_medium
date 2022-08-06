@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/container-with-most-water/
 
-// brute force 
+// brute force 95ms
 const maxArea = function(height){
     var list = [];
     for (var a in height){
@@ -15,7 +15,7 @@ const maxArea = function(height){
     return list[0];
 }
 
-// sliding window?
+// sliding window? 63ms
 var maxArea = function(heightList) {
     var left = 0;
     var right = heightList.length - 1;
