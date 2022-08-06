@@ -15,7 +15,7 @@ const maxArea = function(height){
     return list[0];
 }
 
-// algorithm
+// sliding window?
 var maxArea = function(heightList) {
     var left = 0;
     var right = heightList.length - 1;
