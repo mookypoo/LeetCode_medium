@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/container-with-most-water/
 
+// brute force 
 const maxArea = function(height){
     var list = [];
     for (var a in height){
@@ -14,3 +15,25 @@ const maxArea = function(height){
     return list[0];
 }
 
+// algorithm
+var maxArea = function(heightList) {
+    var left = 0;
+    var right = heightList.length - 1;
+    var maxArea = 0;
+    
+    while (left < right) {
+        var height = Math.min(heightList[left], heightList[right]);
+        var width = right - left;
+        var area = height * width;
+        if (area > maxArea) maxArea = area;
+        
+        if (heightList[left] <= heightList[right]){
+            left++;
+        } else {
+            right--;
+        }
+
+    }
+    
+    return maxArea;
+};
