@@ -1,5 +1,5 @@
-https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
-
+// https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+// 61 ms
 const twoSum = (numbers, target) => {
    for (i in numbers) {
        const otherNumber = target - numbers[i];
