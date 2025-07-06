@@ -1,2 +1,2 @@
 # LeetCode_medium
-JavaScript Solution for LeetCode Questions (Medium)
+Java/JavaScript Solution for LeetCode Questions (Medium)
